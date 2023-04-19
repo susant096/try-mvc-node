@@ -1,0 +1,18 @@
+<div class="container pt-5">
+    <div class="pt-5"></div>
+    <form action="/update/<%= rows.id %>?_method=PUT" method="POST">
+        <div class="mb-3">
+            <label for="judul" class="form-label">Judul</label>
+            <input type="text" name="judul" class="form-control" value="<%= rows.judul %> ">
+        </div>
+        <div class="mb-3">
+            <label for="kalimat" class="form-label">Kalimat</label>
+            <textarea class="form-control" name="kalimat" rows="3"><%= rows.kalimat %> </textarea>
+        </div>
+        <div class="mb-3">
+            <label for="link" class="form-label">Link</label>
+            <input type="text" name="link" class="form-control" value="<%= rows.link %> ">
+        </div>
+        <input type="submit" name="submit" class="btn btn-primary mb-3" value="Update">
+    </form>
+</div>
